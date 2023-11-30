@@ -54,7 +54,7 @@ class EDCrypt:
   @staticmethod
   def xor_encrypt_decrypt(data: ReadableBuffer, key: ReadableBuffer) -> bytearray:
     """
-    Performs "magic xor' encryption/decryption.
+    Performs RC4 encryption/decryption.
     Symmetric usage
     """
     temp_buf = bytearray(range(256))
